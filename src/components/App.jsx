@@ -17,21 +17,11 @@ class App extends Component {
     (Math.round(good/(good+neutral+bad)*100))
 
   onButtonPress = (e) => {  
-    if (e.target.textContent === 'good') {
+    const name = e.target.innerHTML;   
       this.setState((prevState) => ({
-       good: prevState.good + 1       
-      }))          
-    } else if (e.target.textContent === 'neutral') {
-      this.setState((prevState) => ({
-        neutral: prevState.neutral + 1       
-       }))     
-    } else if (e.target.textContent === 'bad') {
-      this.setState((prevState) => ({
-        bad: prevState.bad + 1       
-       }))     
-    }
-  }
- 
+        [name]: prevState[name] + 1       
+      }))    
+     }
 
   render () {
     const {good, neutral, bad} = this.state; 
