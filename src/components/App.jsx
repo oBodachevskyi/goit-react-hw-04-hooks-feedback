@@ -15,7 +15,6 @@ class App extends Component {
 
   countPositiveFeedbackPercentage = ({good,neutral,bad}) =>      
     (Math.round(good/(good+neutral+bad)*100))
-  
 
   onButtonPress = (e) => {  
     if (e.target.textContent === 'good') {
