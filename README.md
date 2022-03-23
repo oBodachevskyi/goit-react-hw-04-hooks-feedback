@@ -88,3 +88,8 @@
 3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
    отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
    скрипта будет указано в чем проблема.
+
+   {((good+neutral+bad) > 0) ? <Statistics /_ good={good} neutral={neutral}
+   bad={bad} _/ total={this.countTotalFeedback(this.state)}
+   positivePercentage={this.countPositiveFeedbackPercentage(this.state)} >
+   </Statistics> : <Notification message="There is no feedback" /> }

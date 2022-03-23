@@ -10,6 +10,6 @@ const Section = ({title, children}) => (<section>
 Section.propTypes = {
     title: PropTypes.string,
     children: PropTypes.array,
-}
+} 
 
 export default Section
