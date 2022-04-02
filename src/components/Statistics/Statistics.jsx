@@ -16,6 +16,7 @@ export default function Statistics (props) {
         <p>Positive feedback: {countPositiveFeedbackPercentage(props)}%</p></>)
 }
 
+
 Statistics.propTypes = { 
     renderObject: PropTypes.object,
 }

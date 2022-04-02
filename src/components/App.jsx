@@ -31,8 +31,8 @@ export default function App () {
               setBad(bad + 1)
               break;
 
-              default:
-        return;
+            default:
+              return;
       }} 
   
   return (      
